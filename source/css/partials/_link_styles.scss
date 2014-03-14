@@ -1,0 +1,30 @@
+// Link styles
+a:link {
+	text-decoration: none;
+	color: $red;
+	 -o-transition:.3s;
+  	-ms-transition:.3s;
+  	-moz-transition:.3s;
+  	-webkit-transition:.3s;
+  /* ...and now for the proper property */
+  	transition:.3s;
+}
+
+a:hover {
+	color: $red-dark;
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+a:visited{
+	color: $red;
+}
+
+a:active{
+	position:relative;
+	top:1px;
+}
+
+.red-hover a:hover {
+	background-color: $red;
+}

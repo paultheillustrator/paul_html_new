@@ -1,0 +1,82 @@
+// Inside page styles
+
+/*----------- INSIDE_HERO ------------*/
+#landing_wrap--inside{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	display:table;
+	position: relative;
+	color: white;
+}
+/*------------------HERO--------------*/
+.hero--inside{
+	display: table-cell!important;
+}
+
+#landing_wrap--inside h1{
+	color: white;
+	line-height: 1em;
+	margin-top: 0;
+}
+
+#landing_wrap--inside--invert h1{
+	color: $grey-darkest;
+	line-height: 1em;
+	margin-top: 0;
+}
+
+/*-------------PROJECT SPECIFIC CLASSES---------------*/
+
+/*--Showreel--*/
+
+$showreel-primary-color: $red;
+
+.body_bg--showreel{
+	background-color: #111418;
+	color: rgba(255, 255, 255, 1);
+}
+
+.head_bg--showreel{
+	/*background-color: #171717;*/
+	background-color: #181c21;
+}
+
+.yellow_showreel{
+	color: $showreel-primary-color;
+}
+
+.intro:first-child:first-letter { 
+	float: left; 
+	color: $red; 
+	font-size: 4em; 
+	line-height: 60px; 
+	padding-top: 15px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: $header-font-family; }
+
+/*-- Design Thinking --*/
+
+.body_bg--design_thinking{
+	background-color: $grey-lightester;
+	color: $grey-darkest;
+}
+
+.head_bg--design_thinking{
+	/*background-color: #171717;*/
+	background-color: white;
+}
+
+#project_header--design-thinking{
+	color: $grey-darkest!important;
+}
+
+
+// DIT
+
+
+// Consider This
+
+
+//

@@ -1,0 +1,40 @@
+// Buttons
+
+@import "partials/base";
+
+.button {
+	display: block;
+	font-family: $header-font-family;
+	color: black !important;
+	padding: 0.75em;
+	text-decoration: none;
+	text-transform:uppercase;
+	letter-spacing: 0.1em;
+	width: auto;
+	text-align: center;
+	font-weight:700;
+	max-width:10em;
+	margin: 0 auto;
+	border: 0.22em solid black;
+	background-color: white;
+	/*@include cool-shadow-black;*/
+	border-radius: 2px;
+
+}
+
+.button:hover {
+	text-decoration: none;
+	/*background-color: #b41e00;*/
+	border: 0.22em solid $red;
+	color:$red !important;
+	background-color: white;
+}
+
+.button:active{
+	/*background-color: black;*/
+}
+
+.button a:visited{
+	color:black;
+	/*background-color:$red;*/
+}

@@ -1,0 +1,63 @@
+//Base styles
+
+//Colours
+$grey-lightester: #fafafa;
+$grey-lightest: #f1f1f1;
+$grey-light: #cccccc;
+$grey-medium: #666666;
+$grey-dark: #333333;
+$grey-darkest: #0a0a0a;
+$black: #000;
+
+$red: #ff2a00;
+$red-dark: #b41e00;
+$blue: #00c0ff;
+$yellow: #ffea00;
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+// Base Font
+$base-font-family-sans: "brandon-grotesque",sans-serif;
+$base-font-family: "ff-tisa-web-pro", "serif";
+$base-font-family-hand: "scrawlregular", sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 18px;
+$base-font-size-micro: 0.75em;
+$base-line-height: 1.6em;
+$base-letter-spacing:0.02em;
+$base-font-color: #444;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $black;
+$header-font-family-serif: "garamond-premier-pro",sans-serif;
+$header-font-family: "brandon-grotesque",sans-serif;
+$header-font-family-hand: "paul_handsemibold", sans-serif;
+
+//Padding
+$padding-bp1: 3em;
+$padding-bp2: 2em;
+$padding-bp3: 0.75em;
+
+//Drop shadows
+$hover-color:blue;
+$basic-color:black;
+@mixin cool-shadow-black{box-shadow: 15px 15px 0 $basic-color, 14px 14px 0 $basic-color, 13px 13px 0 $basic-color, 12px 12px 0 $basic-color, 11px 11px 0 $basic-color, 10px 10px 0 $basic-color, 9px 9px 0 $basic-color, 8px 8px 0 $basic-color, 7px 7px 0 $basic-color, 6px 6px 0 $basic-color, 5px 5px 0 $basic-color, 4px 4px 0 $basic-color, 3px 3px 0 $basic-color, 2px 2px 0 $basic-color, 1px 1px 0 $basic-color;}
+@mixin cool-shadow-black-hover{box-shadow: 15px 15px 0 $hover-color, 14px 14px 0, 13px 13px 0, 12px 12px 0, 11px 11px 0, 10px 10px 0, 9px 9px 0, 8px 8px 0, 7px 7px 0, 6px 6px 0, 5px 5px 0, 4px 4px 0, 3px 3px 0, 2px 2px 0, 1px 1px 0;}
+
+@import "modules/all";
+
+//Breakpoints
+/*@mixin breakpoint_mobile {@media screen and (max-width: 480px)}
+@mixin breakpoint_tablet {@media screen and (min-width: 481px) and (max-width: 768px)}
+@mixin breakpoint_desktop {@media screen and (min-width: 768px) and (max-width: 1300px)}
+@mixin breakpoint_desktop_wide {@media screen and screen and (min-width: 1301px)}
+*/
