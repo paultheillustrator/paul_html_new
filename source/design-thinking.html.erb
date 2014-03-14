@@ -1,0 +1,143 @@
+<!doctype html>
+<!--[if lt IE 8]><html class="lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Paul Woods | Designer, illustrator, blogger and wanker</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- CSS -->
+		<link href="../../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+		<!-- Javascript -->
+		<script src="../../js/modernizr.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="//use.typekit.net/evz6ssi.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<!-- Apple Touch / Windows 8 icons -->
+		<link rel="apple-touch-icon" href="../../images/apple-touch-icon.png" />
+		<meta name="msapplication-square310x310logo" content="../../images/touch_icons/largetile.png" />
+		
+		<!-- Fade out as scroll -->
+		<script>
+				$(window).scroll(function() {
+		    if ($(this).scrollTop() > 400) {
+		        $( "" ).fadeIn();
+		    } else {
+		        console.log('there');
+		        $( "#read-more" ).fadeOut();
+		    }
+		});
+		</script>
+	</head>
+	<body class="body_bg--design_thinking">
+		<div id="landing_wrap--inside" class="head_bg--design_thinking">
+			<!-- ABOUT SECTION -->	
+			<div class="about hide table">
+				<div class="cross">X</div>
+				<div class="container no-bg table-cell">
+					<section class="opening-paragraph">
+						Hello fuckers.<br><br>
+						Herein lies the website of Paul, designer director at <a href="http://edenspiekermann.com" target="blank">Edenspiekermann</a>. I make things that are exciting, useful and occasionally offensive. I also write about these things.<br><br>
+						Farewell.<br>
+						<a href="http://twitter.com/paulillustrator" target="blank">@paulillustrator</a>
+					</section><!-- End intro section -->
+				</div><!-- End container -->
+			</div><!-- End about-wrap -->
+
+			
+			<!-- NAVIGATION -->
+			<div class="nav-wrap">
+				<a href="../../">
+					<h3 class="site-logo">Paul</h3>
+				</a>
+				<nav>
+					<ul>
+						<li><a href="../../projects">Projects</a></li>
+						<li class="about-link"><a href="#">Me</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- MAIN STAGE -->
+			<div class="hero fadeInUp">
+				<img src="../../images/projects/covers/projects_headers_design_thinking.jpg">
+				<h1 id="project_header--design-thinking">Design Thinking.<br>Visualised</h1>
+				<span class="grey subline">Edenspiekermann</span>
+			</div><!-- End hero -->
+
+		</div><!-- End landing_wrap -->
+		
+		<div class="center">
+			<div id="read-more">
+				More bollox
+			</div>
+		</div><!-- End center -->
+
+		<article class="statement">
+			<h3 class="statement-header yellow_showreel">The brief</h3>
+			Visualise a publication on the topic of design thinking.<br>
+			Include nude images if possible.
+		</article>
+
+		<div class="container no-bg">
+				<article class="intro">
+					Working with Erik Spiekermann on a new book on design thinking, the brief was to illustrate the title pages and smaller,handdrawn diagrams throughtout. 
+					<br><br>
+					The project was later extended into an app version, with a custom webfont, UI and a further 40 illustrations and animations created.
+				</article>
+		</div><!-- End container no-bg -->
+		
+		<div class="container no-bg">
+			<div class="grid-wrap no-gutter">
+					<div class="grid-col one-up--full no-gutter">
+						<img src="../../images/projects/Design_thinking_image.jpg">
+					</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="footer_wrap">
+			<ul id="social_footer">
+				<li><a href="http://www.twitter.com/paulillustrator"><img src="../../images/svg/social_footer_twitter.svg" alt="Twitter"></a></li>
+				<li><a href="http://www.twitter.com/paulillustrator"><img src="../../images/svg/social_footer_facebook.svg" alt="Facebook"></a></li>
+			</ul> 
+			<p>
+			You’ve reached the bottom of the page. Well done. Nothing particularly interesting to see here, just the usual copyright BS and some standard social media links. What else were you expecting? 
+			</p>
+			<p>Copyright Paul the Designer 2014. | Offenders will be de-bollocked.</p>
+		</footer><!-- End footer -->
+
+		<!-- Start FitText -->
+		<script src="../../js/jquery.fittext.js"></script>
+		
+		<!-- Instant click JS 
+		<script src="../../js/instantclick.min.js" data-no-instant></script>
+		<script data-no-instant>InstantClick.init();</script>-->
+
+
+		<!-- Show / hide About page JS -->
+		<script>
+			$( ".about-link").click(function() {
+			  $(".about").removeClass( "fadeOut" ).toggleClass( "show fadeIn" );
+			});
+			$( ".about").click(function() {
+			  $(".about").removeClass( "show fadeIn" ).toggleClass( "fadeOut" );
+			});
+		</script>
+
+		<!-- Fade as you Scroll down -->
+		<script type="text/javascript">
+		</script>
+
+		<!-- Fit Text JS -->
+		<script type="text/javascript">
+			$("#project_header").fitText(1.1, { minFontSize: '30px', maxFontSize: '90px' });
+		</script><!-- End Fit Text -->
+
+	</body>
+</html>
