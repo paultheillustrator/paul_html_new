@@ -11,6 +11,8 @@ $black: #000;
 
 $red: #ff2a00;
 $red-dark: #b41e00;
+$red-light:#ff7358;
+$red-lightest:#ffb1a2;
 $blue: #00c0ff;
 $yellow: #ffea00;
 
@@ -52,8 +54,6 @@ $hover-color:blue;
 $basic-color:black;
 @mixin cool-shadow-black{box-shadow: 15px 15px 0 $basic-color, 14px 14px 0 $basic-color, 13px 13px 0 $basic-color, 12px 12px 0 $basic-color, 11px 11px 0 $basic-color, 10px 10px 0 $basic-color, 9px 9px 0 $basic-color, 8px 8px 0 $basic-color, 7px 7px 0 $basic-color, 6px 6px 0 $basic-color, 5px 5px 0 $basic-color, 4px 4px 0 $basic-color, 3px 3px 0 $basic-color, 2px 2px 0 $basic-color, 1px 1px 0 $basic-color;}
 @mixin cool-shadow-black-hover{box-shadow: 15px 15px 0 $hover-color, 14px 14px 0, 13px 13px 0, 12px 12px 0, 11px 11px 0, 10px 10px 0, 9px 9px 0, 8px 8px 0, 7px 7px 0, 6px 6px 0, 5px 5px 0, 4px 4px 0, 3px 3px 0, 2px 2px 0, 1px 1px 0;}
-
-@import "modules/all";
 
 //Breakpoints
 /*@mixin breakpoint_mobile {@media screen and (max-width: 480px)}

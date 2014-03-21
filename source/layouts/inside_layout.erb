@@ -14,10 +14,11 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- CSS -->
-        <%= stylesheet_link_tag  "screen", "modernizr", :protocol => :relative %>
+        <link rel="stylesheet" href="../css/normalize.css" >
+        <link rel="stylesheet" href="../css/screen.css">
 
         <!-- JS -->
-        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main" %>
+        <script src="../js/vendor/modernizr-2.6.1.min.js"></script>
         <script type="text/javascript" src="//use.typekit.net/evz6ssi.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -32,15 +33,14 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
         
         <!-- Fit Text JS -->
         <script type="text/javascript">
             $("#giant").fitText(1.1, { minFontSize: '50px', maxFontSize: '300px' });
-            $("#fitText_01").fitText(1.1, { minFontSize: '30px', maxFontSize: '200px' });
-            $("#fitText_02").fitText(1.1, { minFontSize: '50px', maxFontSize: '1000px' });
         </script><!-- End Fit Text -->
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
