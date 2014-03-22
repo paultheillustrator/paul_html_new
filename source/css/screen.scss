@@ -22,6 +22,7 @@
 @import "partials/inside_page";
 @import "partials/project_overview";
 @import "partials/footer";
+@import "partials/scrawl";
 @import "modules/all";
 // 
 
@@ -105,7 +106,7 @@ h1, h2, h3 {
 }
 
 .intro{
-	max-width:30em;
+	max-width:28em;
 	margin: 0 auto;
 	/*padding: 2em 0 2em 0;*/
 	padding-bottom: $padding-bp1;
@@ -258,7 +259,7 @@ img.bg {
 	z-index: 3;
 	color: white;
 	opacity: 0.95;
-	font-size: 120%;
+	font-size: 110%;
 }
 
 .about a{

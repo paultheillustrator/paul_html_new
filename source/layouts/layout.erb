@@ -17,7 +17,9 @@
         <%= stylesheet_link_tag  "screen", "modernizr", :protocol => :relative %>
 
         <!-- JS -->
-        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main" %>
+        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main", :protocol => :relative %>
+        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js", :protocol => :relative %>
+
         <script type="text/javascript" src="//use.typekit.net/evz6ssi.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -30,17 +32,29 @@
         <%= yield %>
         <%= partial "footer" %>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <%= javascript_include_tag "js/plugins.js", :protocol => :relative %>
+        <%= javascript_include_tag "js/main.js", :protocol => :relative %>
+
         <!-- Fit Text JS -->
         <script type="text/javascript">
             $("#giant").fitText(1.1, { minFontSize: '50px', maxFontSize: '300px' });
-            $("#fitText_01").fitText(1.1, { minFontSize: '30px', maxFontSize: '200px' });
-            $("#fitText_02").fitText(1.1, { minFontSize: '50px', maxFontSize: '1000px' });
+            $("#fitText_01").fitText(2.5);
+            $("#fitText_02").fitText(0.31);
+            $("#fitText_03").fitText(2.5);
         </script><!-- End Fit Text -->
+
+        <!-- Fade out as scroll -->
+        <script>
+                $(window).scroll(function() {
+            if ($(this).scrollTop() > 400) {
+                $( "" ).fadeIn();
+            } else {
+                console.log('there');
+                $( "#read-more" ).fadeOut();
+            }
+        });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
