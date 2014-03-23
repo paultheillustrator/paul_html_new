@@ -15,3 +15,4 @@ gem "middleman-deploy"
 
 #Image Optim
 gem "middleman-imageoptim", "~> 0.1.4"
+gem 'image_optim'

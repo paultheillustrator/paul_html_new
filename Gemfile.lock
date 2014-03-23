@@ -115,6 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  image_optim
   middleman (~> 3.2.2)
   middleman-deploy
   middleman-imageoptim (~> 0.1.4)
