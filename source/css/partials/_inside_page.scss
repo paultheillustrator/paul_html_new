@@ -39,7 +39,7 @@ $showreel-primary-color: $red;
 
 .head_bg--showreel{
 	/*background-color: #171717;*/
-	background-color: #181c21;
+	background-color: #181b1f;
 }
 
 .yellow_showreel{
@@ -61,7 +61,7 @@ $design_thinking-primary-color: $red;
 
 .body_bg--design_thinking{
 	/*background-color: #ff2a00;*/
-	background-color: $grey-lightester;
+	background-color: #f1f1f1;
 	color: $grey-darkest;
 }
 
@@ -74,6 +74,10 @@ $design_thinking-primary-color: $red;
 	color: $grey-darkest!important;
 }
 
+.design_thinking_image{
+	width: 20px!important;
+	height: auto;
+}
 
 // DIT
 

@@ -4,6 +4,7 @@
 	max-width:28em;
 	margin:0 auto;
 	text-align: center;
+	overflow: hidden;
 }
 
 .fitText-gutter{
@@ -43,7 +44,7 @@
 	font-family: $base-font-family-hand;
 	font-weight: $black;
 	letter-spacing: -0.03em;
-	color: $grey-light!important;
+	color: #1f1f1f!important;
 	text-transform: none;
 }
 
@@ -53,8 +54,9 @@
 	font-family: $base-font-family-hand;
 	font-weight: $black;
 	letter-spacing: -0.03em;
-	color: #3b3b3b!important;
+	color: #1f1f1f!important;
 	text-transform: none;
 	text-align: left!important;
 	line-height: 1em;
+	overflow: hidden;
 }
