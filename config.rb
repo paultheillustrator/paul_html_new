@@ -69,3 +69,18 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+#Image Optimisation
+#activate :imageoptim do |options|
+#end
+
+  #Deploy script
+  activate :deploy do |deploy|
+  deploy.build_before = true # default: false
+  deploy.method = :ftp
+  # host, user, passwword and path *must* be set
+  deploy.host = "ftp.paultheillustrator.com"
+  deploy.path = "/bolloxier"
+  deploy.user = "onoffpaul"
+  deploy.password = "Onoffband1"
+end
