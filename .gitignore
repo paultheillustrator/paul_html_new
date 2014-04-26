@@ -17,4 +17,4 @@
 .DS_Store
 
 # Ignore .DS_store file
-config.rb
+/config.rb
