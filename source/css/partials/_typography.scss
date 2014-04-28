@@ -226,8 +226,7 @@ h2.white:after{
 
 }
 
-.statement:after{
-	
+.statement.divider-line:after{
 	position: absolute;
     content:'';
     height: 5px;

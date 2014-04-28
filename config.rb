@@ -78,7 +78,7 @@ end
   deploy.host = "ftp.paultheillustrator.com"
   deploy.path = "/bolloxier"
   deploy.user = "onoffpaul"
-  deploy.password = "Onoffband1"
+  deploy.password = "Hairyman47!"
 end
 
 #Image Optimisation

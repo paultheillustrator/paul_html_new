@@ -18,16 +18,18 @@
 @import "partials/mixins";
 @import "partials/holding_page";
 @import "partials/helpers";
-@import "partials/inside_page";
+@import "partials/projects";
 @import "partials/project_overview";
 @import "partials/footer";
 @import "partials/scrawl";
+@import "partials/images";
+@import "partials/gradients";
 @import "modules/all";
 // 
 
 // Third-party
-/*@import "vendor/_proportional-grids.scss";
-@import "vendor/jquery.ui.core";*/
+/*@import "vendor/animation-library";*/
+/*@import "vendor/jquery.ui.core";*/
 
 html, body{
 	line-height: $base-line-height;
@@ -212,7 +214,7 @@ h1, h2, h3 {
 
 @media screen and (min-width: 481px) and (max-width: 768px){
 	.hero img{
-	width: 100%!important;
+	width: 70%!important;
 }	
 }
 

@@ -7,7 +7,7 @@ title: Paul Woods | Designer, illustrator, blogger and wanker
 		<div id="landing_wrap--inside" class="head_bg--showreel">
 
 			<!-- MAIN STAGE -->
-			<div class="hero fadeInUp">
+			<div class="hero--showreel fadeInUp">
 				<img src="../images/projects/covers/projects_headers_showreel_2.jpg">
 				<h1 id="project_header">going to<br>Hollywood</h1>
 				<span class="grey subline">Edenspiekermann</span>
@@ -21,10 +21,14 @@ title: Paul Woods | Designer, illustrator, blogger and wanker
 			</div>
 		</div><!-- End center -->
 
+		<!-- Fixed image module -->
+		<div class="fixed" style="background: url(../images/projects/showreel/countdown-05.gif)">
+		</div>
+
+		<!-- Text module invert -->
 		<div class="container">
 			<article class="intro">
-				<img src="../images/projects/showreel/countdown-05.gif">
-					<article class="statement white">
+					<article class="statement white divider-line">
 						<h3 class="statement-header yellow_showreel">The challenge</h3>
 						Most agency showreels are shit.<br>
 						Make one that isn’t.<br><br>
@@ -40,7 +44,7 @@ title: Paul Woods | Designer, illustrator, blogger and wanker
 					Once again, as this year’s summer season came around, Steven and I sat together, wondering if this elusive piece of cinematic history would ever make it to the silver (aluminium) screen.</p>
 					<p>And then the idea became clear to us. A true eureka moment: If we were to make an agency film, it would need to be:</p>
 					<p>
-						<br><br><img src="../images/projects/showreel/showreel-title.gif">
+						<br><br><img src="../images/projects/showreel/showreel-title.gif" id="animation--title" style="visibility: hidden">
 					</p>
 				</article>
 		</div><!-- End container no-bg -->
@@ -63,6 +67,10 @@ title: Paul Woods | Designer, illustrator, blogger and wanker
 				</article>
 			</div><!-- End container -->
 		</div><!-- End white-bg -->
+
+		<!-- Fixed image module -->
+		<div class="fixed" style="background: url(../images/projects/showreel/the_shoot_02.jpg)">
+		</div>
 
 		<!-- Text module invert -->
 		<div class="container">
@@ -124,9 +132,16 @@ title: Paul Woods | Designer, illustrator, blogger and wanker
 		<!-- Text module invert -->
 		<div class="container">
 			<article class="intro">
-					<p class="centre">We we ready to start.</p>
-			</article>
+					<p>No great film is complete without a great cast. And if we wanted to create the Greatest Showreel of All Time, we would need to assemble the Greatest Ensemble Cast of All Time. Ever.</p>
+					<p>Armed with the most ridiculous storyboard imaginable, we set about gathering our ‘cast’ through Amazon orders, eBay and confincing family and friends that their beloved pets were safe with us. Sort of.</p>
+							<!-- Text module invert -->
+			<article class="statement white center">
+					<h3 class="statement-header yellow_showreel"> </h3>
+					We we ready to start.
+			</article><!-- End statement white -->
 		</div><!--End container -->
+			</article>
+		</div><!--End container -->		
 
 		<!-- Text module white-->
 		<div class="medium-bg">
@@ -134,17 +149,20 @@ title: Paul Woods | Designer, illustrator, blogger and wanker
 			<article class="intro">
 					<img src="../images/projects/showreel/countdown-02.gif">
 					<h2 class="white">The shoot</h2>
+					<p>From the start, we knew that a good showreel should be memorable, funny and most importantly, tell a great story. Early on, we decided that the best way to achive this was to show no client work whatsoever. Instead, clients would be referenced through subtle cues throughout.</p>
+				
 					<article class="statement white">
 						<h3 class="statement-header white"> </h3>
 						In true Agile style, we cut the film as we went along, filming by day and editing by night.
 					</article><!-- End statement white -->
-
-					<p>From the start, we knew that a good showreel should be memorable, funny and most importantly, tell a great story. Early on, we decided that the best way to achive this was to show no client work whatsoever. Instead, clients would be referenced through subtle cues throughout.</p>
 					
-				</article>
+			</article>
 			</div><!-- End container -->
-
 		</div><!-- End medium-bg -->
+
+		<!-- Fixed image module -->
+		<div class="fixed" style="background: url(../images/projects/showreel/the_shoot.jpg)">
+		</div>
 
 		<!-- Video module -->
 		<div class="container intro">
@@ -154,3 +172,22 @@ title: Paul Woods | Designer, illustrator, blogger and wanker
 		<div class="showreel-video">
 				<style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 80%; height: 80%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/78900658?title=0&amp;byline=0&amp;portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 		</div><!-- End showreel-video -->
+
+		<!-- Text module invert-->
+		<div class="container intro">
+			<h2 class="white">Credits</h2>
+		</div>
+
+<!--  JS TRIGGER FOR CSS ANIMATIONS BY SCROLL EVENTS -->
+		<script>
+			$(window).scroll(function() {
+				$('#animation--title').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+600) {
+						$(this).addClass("fadeInFast");
+					}
+				});
+			});
+		</script>

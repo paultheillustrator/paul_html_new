@@ -1,0 +1,30 @@
+//Images
+
+.fixed{
+	position: relative!important;
+    background-position: top center!important;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    background-attachment: fixed!important;
+    height:25em;
+}
+@media screen and (max-width: 700px){
+.fixed{
+	position: relative;
+    background-position: top center;
+    background-repeat: no-repeat!important;
+    background-attachment: scroll!important;
+    background-size: 100%!important; 
+    height:12em;
+}
+}
+
+.fixed--repeat{
+	position: relative;
+    background-position: top center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height:25em;
+}
