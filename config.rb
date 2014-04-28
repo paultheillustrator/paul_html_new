@@ -76,9 +76,9 @@ end
   deploy.method = :ftp
   # host, user, passwword and path *must* be set
   deploy.host = "ftp.paultheillustrator.com"
-  deploy.path = "/bolloxier"
-  deploy.user = "onoffpaul"
-  deploy.password = "Hairyman47!"
+  deploy.path = "/cunts"
+  deploy.user = "pauldesigner"
+  deploy.password = "Wankers69!"
 end
 
 #Image Optimisation
