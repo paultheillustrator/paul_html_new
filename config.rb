@@ -50,7 +50,7 @@ set :css_dir, 'css'
 
 set :js_dir, 'js'
 
-set :images_dir, 'images'
+set :images_dir, '/images'
 
 # Build-specific configuration
 configure :build do
@@ -70,16 +70,7 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-  #Deploy script
-  activate :deploy do |deploy|
-  deploy.build_before = true # default: false
-  deploy.method = :ftp
-  # host, user, passwword and path *must* be set
-  deploy.host = "ftp.paultheillustrator.com"
-  deploy.path = "/cunts"
-  deploy.user = "pauldesigner"
-  deploy.password = "Wankers69!"
-end
+
 
 #Image Optimisation
 #activate :imageoptim do |options|
