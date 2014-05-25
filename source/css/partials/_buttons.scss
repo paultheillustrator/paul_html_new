@@ -5,8 +5,9 @@
 .button {
 	display: block;
 	font-family: $header-font-family;
-	color: black !important;
-	padding: 0.75em;
+	color: white !important;
+	/* --padding: 0.75em; --*/
+	padding: 0.5em; /* -- TEMP FOR LAUNCH --*/
 	text-decoration: none;
 	text-transform:uppercase;
 	letter-spacing: 0.1em;
@@ -15,19 +16,21 @@
 	font-weight:700;
 	max-width:10em;
 	margin: 0 auto;
-	border: 0.22em solid black;
-	background-color: white;
+	border: 1px solid white;
+	font-size: 0.75em; /*-- TEMP FOR LAUNCH --*/
+	/*background-color: white;*/
 	/*@include cool-shadow-black;*/
-	border-radius: 2px;
-
+	border-radius: 4px;
 }
 
 .button:hover {
 	text-decoration: none;
 	/*background-color: #b41e00;*/
-	border: 0.22em solid $red;
-	color:$red !important;
-	background-color: white;
+	/*border: 0.22em solid $red;*/
+	/*color:$red !important;*/
+	background-color: rgba(255,255,255,1);
+	opacity: 1!important;
+	color: black!important;
 }
 
 .button:active{
@@ -37,4 +40,11 @@
 .button a:visited{
 	color:black;
 	/*background-color:$red;*/
+}
+
+@media screen and (max-width:550px){
+.button {
+	margin-top: -0.2em;
+	border: 1px solid white;
+}
 }

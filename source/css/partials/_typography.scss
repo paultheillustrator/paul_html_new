@@ -164,11 +164,28 @@ html, body{
 	color: black;
 }
 
-
 .subline{
 	position:relative;
 	top: -24px!important;
 }
+
+.subline--homepage{
+	position:relative;
+	top: -24px!important;
+}
+
+.subline--homepage--none{
+	position:relative;
+	top: -24px!important;
+}
+
+@media screen and (max-width:550px){
+
+.subline--homepage--none{
+	display: none;
+}
+}
+
 
 /*---------- CENTERED STATEMENT TEXTS ----------*/
 

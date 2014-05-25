@@ -173,8 +173,9 @@ h1, h2, h3 {
 }
 
 .hero img{
-	width: 60%;
+	width: 55%; /*WAS 60% BEFORE THE TEMP LAUNCH*/
 	opacity: 1!important;
+	margin-bottom: -1em; /*--- TEMP FIX  ---*/
 }
 @media screen and (min-width: 600px){
 .hero img{
@@ -209,6 +210,8 @@ h1, h2, h3 {
 @media screen and (max-width: 480px){
 	.hero img{
 	width: 100%!important;
+	margin-bottom: -1em;/*---TEMP FIX ---*/
+	margin-top:2em;/*---TEMP FIX ---*/
 }
 }
 
@@ -262,6 +265,17 @@ h1, h2, h3 {
   	display: block;
   	text-indent: -9999px;
   	background: url(../images/svg/down-arrow.svg);
+  	background-size: 20px;
+  	background-repeat: no-repeat;
+  	left: 49%;
+}
+
+#read-more--invert{
+	position:fixed;
+	bottom:0;
+  	display: block;
+  	text-indent: -9999px;
+  	background: url(../images/svg/down-arrow-invert.svg);
   	background-size: 20px;
   	background-repeat: no-repeat;
   	left: 49%;

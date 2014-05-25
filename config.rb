@@ -70,7 +70,13 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+  #Deploy script
+  activate :deploy do |deploy|
+  deploy.build_before = true # default: false
+  deploy.method = :ftp
+  # host, user, passwword and path *must* be set
 
+end
 
 #Image Optimisation
 #activate :imageoptim do |options|
