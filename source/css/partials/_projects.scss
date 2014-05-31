@@ -76,13 +76,13 @@ $showreel-primary-color: $red;
 	max-height:10em;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1000px){
 .showreel-video{
 	max-width: 32em;
 	margin: 0 auto;
 	padding-top: 6em;
 	padding-left: 3em;
-	background-image:url('../images/projects/showreel/showreel-large-frame.jpg');
+	background-image:none!important;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	padding-bottom: 5em;
