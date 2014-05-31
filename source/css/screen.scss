@@ -191,7 +191,7 @@ h1, h2, h3 {
 
 @media screen and (max-height: 800px) and(min-height: 0px) and (max-width: 1599px){
 	.hero img{
-	width: 55%; /*was 60%*/
+	width: 50%!important; /*was 55, then 60%*/
 }
 }
 
@@ -357,7 +357,7 @@ img.bg {
   	top: 1.1em;
   	z-index: 1;
   	cursor: pointer;
-  	background: url(../images/svg/cross_small.svg);
+  	background: url(../images/svg/cross_large.svg);
   	background-size: 30px;
   	background-repeat: no-repeat;
 }

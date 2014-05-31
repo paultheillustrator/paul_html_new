@@ -196,21 +196,21 @@ animation-timing-function: ease-in-out;
 /*-----Rotate------*/
 
 .rotate{
-animation:rotate 2s;
+animation:rotate 0.5s;
 animation-timing-function: ease-in-out;
--webkit-animation:rotate 2s; /* Safari and Chrome */
+-webkit-animation:rotate 0.5s; /* Safari and Chrome */
 }
 
 @keyframes rotate
 {
-0% {height: auto; width:0%; transform:rotate(90deg);}
-100% {height: auto; width:60%; transform:rotate(0deg);}
+0% {height: auto; transform:rotate(-90deg);}
+100% {height: auto;  transform:rotate(0deg);}
 }
 
 @-webkit-keyframes rotate /* Safari and Chrome */
 {
-0% {height: auto; width:0%; -webkit-transform:rotate(90deg);}
-100% {height: auto; width:60%; -webkit-transform:rotate(0deg);}
+0% {height: auto; width:0%; -webkit-transform:rotate(-90deg);}
+100% {height: auto; -webkit-transform:rotate(0deg);}
 }
 
 /*----- Upside Down (not really an animation) ----*/

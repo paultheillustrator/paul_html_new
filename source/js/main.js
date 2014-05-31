@@ -5,5 +5,10 @@
 			$( ".about").click(function() {
 			  $(".about").removeClass( "show fadeIn" ).toggleClass( "fadeOut" );
 			});
+			/* Animate cross 
+			$( ".about-link").click(function() {
+			  $(".cross").removeClass( "rotate" ).toggleClass( "rotate" );
+			});*/
+
 
 

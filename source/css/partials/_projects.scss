@@ -80,12 +80,12 @@ $showreel-primary-color: $red;
 .showreel-video{
 	max-width: 32em;
 	margin: 0 auto;
-	padding-top: 6em;
+	padding-top: 0em;
 	padding-left: 3em;
 	background-image:none!important;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	padding-bottom: 5em;
+	padding-bottom: 0em;
 }
 
 .showreel_vimeo{
@@ -141,7 +141,7 @@ $showreel-primary-color: $red;
 
 @media screen and (max-width: 480px){
 	.hero--showreel img{
-	width: 80%!important;
+	width: 100%!important;
 	padding-bottom: 0.5em;
 	padding-top: 1.5 tem;
 }

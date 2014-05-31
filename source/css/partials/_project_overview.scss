@@ -36,6 +36,9 @@ span.text-content {
     position:absolute;
     top:20%;
   }
+  .project--thumb-coming-soon:after {
+    opacity: 1!important;
+  }
 }
 
 .project--thumb img {
@@ -47,7 +50,7 @@ span.text-content {
   opacity: 1;
 }
 
-project--thumb:focus {
+.project--thumb.hover {
   opacity: 1;
 }
 
@@ -84,10 +87,6 @@ project--thumb:focus {
     box-sizing:border-box;
     -moz-box-sizing:border-box;
 }
-.project--thumb:hover:after, .project--thumb:hover:before {
-    opacity:1;
-}
-
-.project--thumb:hover:focus, .project--thumb:focus:before {
+.project--thumb:hover:after,.project--thumb.hover:after, .project--thumb:hover:before {
     opacity:1;
 }

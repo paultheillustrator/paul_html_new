@@ -59,6 +59,21 @@
         });
         </script>
 
+        <!-- Project thumbnails -->
+          <script>
+            $('a.project--thumb').on("touchstart", function (e) {
+                "use strict"; //satisfy the code inspectors
+                var link = $(this); //preselect the link
+                if (link.hasClass('hover')) {
+                    return true;
+                } else {
+                    link.addClass("hover");
+                    $('.project--thumb').not(this).removeClass("hover");
+                    e.preventDefault();
+                    return false; //extra, and to make sure the function has consistent return points
+                }
+            });
+          </script>
         <!-- Parallax header 
 
         <script type="text/javascript">
