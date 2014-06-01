@@ -36,7 +36,18 @@
     background-repeat: no-repeat!important;
     background-attachment: scroll!important;
     background-size: 100%!important; 
-    height:12em;
+    height:14em;
+}
+}
+
+@media screen and (min-width:701px) and (max-width: 768px){
+.fixed,.fixed--100{
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat!important;
+    background-attachment: scroll!important;
+    background-size: 100%!important; 
+    height:24em;
 }
 }
 

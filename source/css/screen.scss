@@ -320,12 +320,21 @@ img.bg {
 	color: $red!important;
 }
 
+.about--link--show{
+	visibility:visible!important;
+}
+
+.about--link--hide{
+	visibility:hidden;
+}
+
 .show{
 	visibility:visible!important;
 }
 
 .hide{
 	visibility:hidden;
+	display: none;
 }
 
 .cross{

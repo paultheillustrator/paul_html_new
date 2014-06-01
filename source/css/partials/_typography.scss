@@ -215,6 +215,10 @@ html, body{
 	.statement{
 		font-size: 125%;
 	}
+
+	.statement br{
+		display: none;
+	}
 }
 
 h2:after{

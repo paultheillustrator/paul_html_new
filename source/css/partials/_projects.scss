@@ -76,21 +76,52 @@ $showreel-primary-color: $red;
 	max-height:10em;
 }
 
-@media screen and (max-width: 1000px){
-.showreel-video{
-	max-width: 32em;
-	margin: 0 auto;
-	padding-top: 0em;
-	padding-left: 3em;
-	background-image:none!important;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	padding-bottom: 0em;
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%;  
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; height: auto; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; left: 0; 
+	width: 80%; 
+	height: 80%; 
 }
 
-.showreel_vimeo{
-	max-width: 1em;
-	/*max-height:13em;*/
+@media screen and (max-width: 1000px){
+.embed-container iframe, .embed-container object, .embed-container embed  { 
+	position: absolute; 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	margin: 0 auto;
+}
+
+.showreel-video{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 3em;
+	background-image:none!important;
+	margin-top: -5em;
+}
+}
+
+@media screen and (max-width: 600px) {
+.embed-container iframe, .embed-container object, .embed-container embed  { 
+	position: absolute; 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	margin: 0 auto;
+}
+
+.showreel-video{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0em;
+	background-image:none!important;
 }
 }
 
@@ -248,7 +279,7 @@ $design_thinking-primary-color: #ff2a00;
 
 @media screen and (min-width: 481px) and (max-width: 768px){
 	.hero--design-thinking img{
-	width: 100%!important;
+	width: 80%!important;
 }	
 }
 
