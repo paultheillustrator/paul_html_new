@@ -17,6 +17,7 @@
 #fitText_wrap img{
 	width:80%;
 	margin:0 auto;
+	opacity: 0.6;
 }
 
 #fitText_01{
@@ -24,39 +25,43 @@
 	font-family: $base-font-family-hand;
 	font-weight: $black;
 	letter-spacing: -0.03em;
-	color: #1f1f1f!important;
+	font-weight: 100!important;
 	text-transform: none;
+	-webkit-font-smoothing: antialiased;
 }
 
 #fitText_02{
 	font-size: 10em;
 	font-family: $base-font-family-hand;
-	font-weight: $black;
-	letter-spacing: 0.03em;
-	color: #1f1f1f!important;
+	font-weight: 100!important;
+	letter-spacing: 0.02em;
+	color: white!important;
 	text-transform: uppercase;
 	margin-bottom: 0.3em;
+	-webkit-font-smoothing: antialiased;
 }
 
 
 #fitText_03{
 	font-size: 2em;
 	font-family: $base-font-family-hand;
-	font-weight: $black;
+	font-weight: 100!important;
 	letter-spacing: -0.03em;
-	color: #1f1f1f!important;
+	color: !important;
 	text-transform: none;
+	text-align: center;
+	margin-top: 0.5em;
 }
 
 
 #fitText_04{
 	font-size: 2em;
 	font-family: $base-font-family-hand;
-	font-weight: $black;
+	font-weight: normal!important;
 	letter-spacing: -0.03em;
-	color: #1f1f1f!important;
+	color: white!important;
 	text-transform: none;
-	text-align: left!important;
+	text-align: center!important;
 	line-height: 1em;
 	overflow: hidden;
 }
