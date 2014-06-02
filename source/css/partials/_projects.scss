@@ -224,6 +224,10 @@ $design_thinking-primary-color: #ff2a00;
 	font-family: $header-font-family; 
 }
 
+.design_thinking_para_black{
+	color: $grey-darkest;
+}
+
 /*------------------hero--design-thinking--------------*/
 .hero--design-thinking{
 	clear: both;
@@ -236,7 +240,7 @@ $design_thinking-primary-color: #ff2a00;
 }
 
 .hero--design-thinking img{
-	width: 60%;
+	width: 50%;
 	opacity: 1!important;
 }
 @media screen and (min-width: 600px){

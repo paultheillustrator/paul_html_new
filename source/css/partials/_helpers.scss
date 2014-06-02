@@ -90,3 +90,10 @@
 .z-index-04{
     z-index: -4;
 }
+
+// Hiding class
+@media screen and (max-width: 600px){
+	.mobile--none{
+		display: none;
+	}
+}

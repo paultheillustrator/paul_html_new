@@ -21,9 +21,11 @@
 @import "partials/projects";
 @import "partials/project_overview";
 @import "partials/footer";
+@import "partials/forms";
 @import "partials/scrawl";
 @import "partials/images";
 @import "partials/gradients";
+@import "partials/typing_animation";
 @import "modules/all";
 // 
 
@@ -100,6 +102,10 @@ h1, h2, h3 {
 	background-color: #686962;
 	/*color: rgba(0,0,0,0.8);*/
 	color: rgba(255,255,255,0.8);
+}
+
+.light-grey-bg{
+	background-color: $grey-lightest;
 }
 
 @media screen and (max-width: 480px){

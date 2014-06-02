@@ -5,6 +5,7 @@
 	margin:0 auto;
 	text-align: center;
 	overflow: hidden;
+	margin-top: -5em;
 }
 
 .fitText-gutter{
@@ -12,6 +13,30 @@
     margin:0px!important;
     padding:0px!important;
     margin-bottom: -9px!important;
+    margin: 0 auto;
+    text-align: center!important;
+}
+
+.fitText-gutter img{
+	padding-top: 2.5em;
+	max-width: 50%;
+	position: relative;
+	right:0;
+}
+
+@media screen and (max-width: 600px){
+	.fitText-gutter{
+	
+}
+
+.fitText-gutter img{
+	visibility: hidden;
+}
+
+#fitText_04{
+	margin-top: 0.2em!important;
+	margin-bottom: -0.5em;
+}
 }
 
 #fitText_wrap img{
@@ -21,13 +46,14 @@
 }
 
 #fitText_01{
-	font-size: 2em;
+	font-size: 2.6em;
 	font-family: $base-font-family-hand;
 	font-weight: $black;
 	letter-spacing: -0.03em;
 	font-weight: 100!important;
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.04em;
 }
 
 #fitText_02{
@@ -39,6 +65,7 @@
 	text-transform: uppercase;
 	margin-bottom: 0.3em;
 	-webkit-font-smoothing: antialiased;
+	margin-top: 0.38em;
 }
 
 
@@ -64,4 +91,5 @@
 	text-align: center!important;
 	line-height: 1em;
 	overflow: hidden;
+	margin-top: 0.7em;
 }

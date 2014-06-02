@@ -1,0 +1,61 @@
+// Forms
+
+.textbox { 
+    background-color: #D7EFFF; 
+    border: solid 0px #646464; 
+    outline: none; 
+    padding: 2px 2px; 
+} 
+.textbox:hover { 
+    background-color: #FF0; 
+} 
+.textbox:focus { 
+    background-color: #6FFF62; 
+} 
+.textbox:active { 
+    background-color: #EB8D00; 
+}
+
+// Modifiers
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.textbox--scrawl { 
+    background-color: rgba(0,0,0,0.1); 
+    color: rgba(0,0,0,0.5); 
+    border: solid 0px #646464; 
+    outline: none; 
+    padding: 0.3em 0.3em;
+    font-family: $base-font-family-hand;
+    font-size: 400%; 
+    min-width: 20em;
+} 
+.textbox--scrawl:hover { 
+     background-color: rgba(0,0,0,0.2); 
+} 
+.textbox--scrawl:focus { 
+    background-color: rgba(255,255,255,1); 
+    color: rgba(0,0,0,1); 
+} 
+.textbox--scrawl:active { 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+@media screen and (max-width:600px){
+.textbox--scrawl { 
+    background-color: rgba(0,0,0,0.1); 
+    color: rgba(0,0,0,0.5); 
+    border: solid 0px #646464; 
+    outline: none; 
+    padding: 0.4em 0.4em;
+    font-family: $base-font-family-hand;
+    font-size: 220%; 
+    max-width: 5em;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    min-width: 77%;
+}
+}
