@@ -63,6 +63,12 @@ h4{
 	margin-bottom: 0em;
 	line-height: 1em;
 }
+@media screen and (max-width:600px){
+	h2{
+		font-size: 2em;
+		line-height: 1em;
+	}
+}
 
  .hand{
 	font-family: $header-font-family-hand;
