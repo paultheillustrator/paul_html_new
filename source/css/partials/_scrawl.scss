@@ -24,6 +24,12 @@
 	right:0;
 }
 
+@media screen and (min-width:481px) and (max-width: 600px){
+	#fitText_01{
+	margin-bottom: 0.7em!important;
+	}
+}
+
 @media screen and (max-width: 600px){
 	.fitText-gutter{
 	

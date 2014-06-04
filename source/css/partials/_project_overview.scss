@@ -17,6 +17,10 @@ span.text-content {
   opacity: 0.2;
 }*/
 
+.project--thumb--square{
+    padding-bottom: 100%!important;
+}
+
 .project--thumb {
     position:relative;
     /*width:200px;
@@ -36,6 +40,7 @@ span.text-content {
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: url('../image/preloader.gif');
 }
 
 @media screen and (max-width: 480px){

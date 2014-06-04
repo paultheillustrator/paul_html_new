@@ -53,9 +53,18 @@ input {
     padding: 0.4em 0.4em;
     font-family: $base-font-family-hand;
     font-size: 220%; 
-    max-width: 5em;
+    max-width: 100%;
     margin-left: 0.8em;
     margin-right: 0.8em;
     min-width: 77%;
 }
+}
+
+@media screen and (max-width:600px){
+    .textbox--scrawl { 
+        max-width: 70%;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        min-width: 60%;
+    }  
 }

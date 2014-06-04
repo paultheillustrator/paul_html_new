@@ -66,18 +66,10 @@ html, body{
 }
 }
 
-h1, h2, h3 {
-	font-family:$header-font-family;
-	text-align: center;
-	font-weight: $regular;
-}
+ img{
+ 	background-color: none;
+ }
 
-
-h1, h2, h3 {
-	font-family:$header-font-family;
-	text-align: center;
-	font-weight: $regular;
-}
 
 /*-----*/
 
@@ -93,9 +85,16 @@ h1, h2, h3 {
 	padding: 3em;
 }
 
+/*---Background panels----*/
+
 .white-bg {
 	background-color: white;
 	color: $base-font-color;
+}
+
+.light-grey-bg{
+	color: $grey-darkest;
+	background-color: $grey-lightest;
 }
 
 .medium-bg{
@@ -104,8 +103,10 @@ h1, h2, h3 {
 	color: rgba(255,255,255,0.8);
 }
 
-.light-grey-bg{
-	background-color: $grey-lightest;
+.dark-grey-bg{
+	background-color: $grey-darker;
+	/*color: rgba(0,0,0,0.8);*/
+	color: white;
 }
 
 @media screen and (max-width: 480px){
