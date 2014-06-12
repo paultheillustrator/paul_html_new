@@ -15,11 +15,11 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- CSS -->
-        <%= stylesheet_link_tag  "screen", "modernizr", :protocol => :relative %>
+        <%= stylesheet_link_tag  "screen", "modernizr" %>
 
         <!-- JS -->
-        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main", :protocol => :relative %>
-        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js", :protocol => :relative %>
+        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main" %>
+        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js" %>
 
         <script type="text/javascript" src="//use.typekit.net/evz6ssi.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -34,8 +34,8 @@
         <%= yield %>
         <%= partial "footer" %>
 
-        <%= javascript_include_tag "js/plugins.js", :protocol => :relative %>
-        <%= javascript_include_tag "js/main.js", :protocol => :relative %>
+        <%= javascript_include_tag "js/plugins.js" %>
+        <%= javascript_include_tag "js/main.js" %>
 
         <!-- Fit Text JS !!!!! TEMP FIX: maxFontSize: '120px' !!!!!-->
         <script type="text/javascript">
