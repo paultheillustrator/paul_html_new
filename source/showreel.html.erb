@@ -9,7 +9,7 @@ description: Most agency showreels are shit. Make one that isn’t.
 
 			<!-- MAIN STAGE -->
 			<div class="hero--showreel fadeInUp">
-				<img src="../images/projects/covers/projects_headers_showreel_2.jpg" alt="The Greatest Showreel">
+				<img src="../images/projects/covers/projects_headers_showreel_2.jpg" alt="The Greatest Showreel" >
 				<h1 id="project_header">going to<br>Hollywood</h1>
 				<span class="grey subline">Edenspiekermann</span>
 			</div><!-- End hero -->
@@ -22,12 +22,16 @@ description: Most agency showreels are shit. Make one that isn’t.
 			</div>
 		</div><!-- End center -->
 
-		<!-- Fixed image module -->
-		<div class="fixed" style="background: url(../images/projects/showreel/countdown-05.gif)" alt="The Greatest Showreel">
+		<!-- Fixed image module 
+		<div class="fixed" style="background: url(../images/projects/showreel/countdown-05-crop.gif)" alt="The Greatest Showreel" data-0="transform: translate(0, -0px); opacity:0;" data-700="transform: translate(0,-200px); opacity:1;">
+		</div> -->
+
+		<div data-0="transform: translate(0, -0px); opacity:0;" data-1500="transform: translate(0,-200px); opacity:1;">
+			<img src="./images/projects/showreel/countdown-05-crop.gif" alt="The Greatest Showreel" width=100%>
 		</div>
 
 		<!-- Text module invert -->
-		<div class="container">
+		<div class="container minus-padding-double" >
 			<article class="intro">
 					<article class="statement white divider-line">
 						<h3 class="statement-header yellow_showreel">The challenge</h3>
@@ -45,7 +49,9 @@ description: Most agency showreels are shit. Make one that isn’t.
 					Once again, as this year’s summer season came around, Steven and I sat together, wondering if this elusive piece of cinematic history would ever make it to the silver (aluminium) screen.</p>
 					<p>And then the idea became clear to us. A true eureka moment: If we were to make an agency film, it would need to be:</p>
 					<p>
-						<br><br><img src="../images/projects/showreel/showreel-title.gif" id="animation--title" style="visibility: hidden" alt="The Greatest Showreel">
+						<br><br><img src="../images/projects/showreel/showreel-title.gif" alt="The Greatest Showreel">
+						<!--
+						<img src="../images/projects/showreel/showreel-title.gif" id="animation--title" style="visibility: hidden" alt="The Greatest Showreel">-->
 					</p>
 				</article>
 		</div><!-- End container no-bg -->
@@ -179,4 +185,12 @@ description: Most agency showreels are shit. Make one that isn’t.
 				});
 			});
 		</script>
-
+<!-- Skroller -->
+		<script type="text/javascript" src="js/vendor/skrollr.js"></script>
+		<script type="text/javascript">
+			if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+	    skrollr.init({
+	        forceHeight: false
+	    		});
+			}
+		</script>
