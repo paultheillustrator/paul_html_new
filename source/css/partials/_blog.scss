@@ -1,0 +1,32 @@
+// Blog
+.blog-post{
+	/*background-color: white;
+	margin-right: 2em;
+	padding-right: 2em;
+	padding-top: 2em;*/
+	margin-bottom: 2em;
+	min-height: 24em;
+}
+
+@media screen and (max-width: 1350px){
+	.blog-post{
+		min-height: 24em;
+	}
+}
+
+.blog-post h3{
+	line-height: 1.2em;
+}
+
+.blog-post h3:after{
+	position: absolute;
+    content:'';
+    height: 2px;
+    width: 2em;
+    background-color: rgba(0,0,0,0.15);
+    text-align: center;
+    display: block;
+    margin: 1.2em auto 1em;
+    position: relative;
+
+}

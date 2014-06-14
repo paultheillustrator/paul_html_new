@@ -27,6 +27,12 @@ html, body{
 }
 }
 
+.micro-copy{
+	font-size: $base-font-size-micro;
+	line-height: 1.45em;
+	color: $grey-medium;
+}
+
 @font-face {
     font-family: 'scrawlregular';
     src: url('../fonts/scrawl-webfont.eot');
