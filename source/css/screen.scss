@@ -81,6 +81,12 @@ html, body{
 	padding: $padding-bp1;
 }
 
+.container--no-padding--top{
+	max-width:1200px;
+	margin: 0 auto;
+	padding: 0 $padding-bp1 $padding-bp1 $padding-bp1;
+}
+
 .container--no_max{
 	max-width:1450px;
 	margin: 0 auto;
@@ -118,6 +124,11 @@ html, body{
 	background-color: $grey-darker;
 	/*color: rgba(0,0,0,0.8);*/
 	color: white;
+}
+
+.pink-bg{
+	color: black;
+	background-color: #FA4E83;
 }
 
 @media screen and (max-width: 480px){
@@ -286,6 +297,7 @@ html, body{
   	background-size: 20px;
   	background-repeat: no-repeat;
   	left: 49%;
+  	z-index: 20;
 }
 
 #read-more--invert{
@@ -297,6 +309,7 @@ html, body{
   	background-size: 20px;
   	background-repeat: no-repeat;
   	left: 49%;
+  	z-index: 20;
 }
 
 /*------- BACKGROUND IMAGE ------*/
