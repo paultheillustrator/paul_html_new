@@ -40,7 +40,7 @@
 }
 
 #fitText_01{
-	margin-bottom: -0.3em;
+	
 }
 
 #fitText_04{
@@ -102,4 +102,25 @@
 	line-height: 1em;
 	overflow: hidden;
 	margin-top: 0.7em;
+}
+.three-up--scrawl{
+    width: 33.33333%;
+}
+@media screen and (min-width: 481px) and (max-width: 1200px){
+.three-up--scrawl {
+    width:33.33333%;
+}
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 499px){
+    .three-up--scrawl{
+     width: 100%;
+}
+}
+
+@media screen and (min-width:500px) and (max-width: 850px){
+    .three-up--scrawl {
+   /* width:50%;*/
+}
 }

@@ -318,7 +318,7 @@ $world-tour-primary-color: #FA4E83;
 	color: $world-tour-primary-color;
 }
 
-.dropcap:first-child:first-letter { 
+.world-tour_para.dropcap:first-child:first-letter { 
 	float: left; 
 	color: $world-tour-primary-color; 
 	font-size: 4em; 
@@ -336,7 +336,7 @@ $world-tour-primary-color: #FA4E83;
 	/*background-color: #00c0ff;*/
 	text-align: center;
 	display: table-cell;
-	padding-top: 20em;
+	padding-top: 23em;
 	vertical-align: middle;
 	position: relative;
 	background-image:url("../images/projects/rbma-world-tour/rbma-world-tour-cover-photo.jpg");
@@ -352,11 +352,20 @@ $world-tour-primary-color: #FA4E83;
 	width:100%;
 }
 
+.world-tour-mosaic img{
+	width:100%;
+	margin-left: auto;
+}
+
 @media screen and (max-width: 700px){
 	.hero--world-tour{
 	    padding-top: 13em;
 	}
 	.world-tour-mosaic{
+	width:100%;
+	overflow: hidden;
+}
+	.world-tour-mosaic img{
 	width:160%;
 	margin-left: -3em;
 }
