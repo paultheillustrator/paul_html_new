@@ -168,6 +168,16 @@ html, body{
 	margin: 0 auto;
 }
 
+.opening-paragraph--medium{
+	font-size: 125%;
+	/*letter-spacing: -1px;*/
+	/*line-height: 125%;*/
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 3em;
+}
+
+
 @media screen and (max-width: 600px){
 	.opening-paragraph{
 	font-size: 150%;
@@ -232,6 +242,8 @@ html, body{
 @media screen and (max-width:580px){
 	.statement{
 		font-size: 125%;
+		padding-left:0.5em;
+		padding-right: 0.5em;
 	}
 
 	.statement br{
@@ -271,6 +283,18 @@ h2.white:after{
     height: 5px;
     width: 3em;
     background-color: rgba(255,255,255,0.1);
+    text-align: center;
+    display: block;
+    margin: 2em auto 1em;
+    position: relative;
+}
+
+.statement.divider-line-black:after{
+	position: absolute;
+    content:'';
+    height: 5px;
+    width: 3em;
+    background-color: rgba(0,0,0,0.1);
     text-align: center;
     display: block;
     margin: 2em auto 1em;

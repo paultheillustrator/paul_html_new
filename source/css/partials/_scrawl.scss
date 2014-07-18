@@ -105,7 +105,18 @@
 }
 .three-up--scrawl{
     width: 33.33333%;
+
 }
+
+@media screen and (max-width: 480px) {
+.three-up--scrawl {
+    width:100%;
+}
+#fitText_01{
+	margin-bottom: -0.5em;
+}
+}
+
 @media screen and (min-width: 481px) and (max-width: 1200px){
 .three-up--scrawl {
     width:33.33333%;

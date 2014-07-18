@@ -131,6 +131,11 @@ html, body{
 	background-color: #FA4E83;
 }
 
+.black-bg{
+	color: white;
+	background-color: black;
+}
+
 @media screen and (max-width: 480px){
 	.container{
 	max-width:inherit;

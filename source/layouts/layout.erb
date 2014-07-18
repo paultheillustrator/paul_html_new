@@ -37,7 +37,7 @@
         <%= javascript_include_tag "js/plugins.js" %>
         <%= javascript_include_tag "js/main.js" %>
 
-        <!-- Fit Text JS !!!!! TEMP FIX: maxFontSize: '120px' !!!!!-->
+        <!-- Fit Text JS -->
         <script type="text/javascript">
             $("#giant").fitText(1.1, { minFontSize: '50px', maxFontSize: '120px' });
             $("#fitText_01").fitText(1.1);
@@ -74,24 +74,6 @@
                 }
             });
           </script>
-        <!-- Parallax header 
-
-        <script type="text/javascript">
-            $(window).scroll(function()
-                {
-                    var scrolled = $(window).scrollTop();
-                    
-                    if( scrolled > $('#giant').offset().top)
-                                               
-                    {
-                        $('#giant').css('top','-60%');
-                    } 
-                    else 
-                    {
-                        $('#giant').css('top',(0-(scrolled*0.6))+'px');;
-                    }
-                });
-        </script>-->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
