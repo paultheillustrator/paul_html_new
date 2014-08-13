@@ -551,25 +551,25 @@ $dit-visual-art: #60b01f;
 /*--------------------------------------------------------------*/
 
 $irishman-primary-color-yellow: #e0f100;
-$irishman-primary-color: #FA4E83;
+$irishman-primary-color: #ed1d24;
 
 .body_bg--irishman{
-	background-color: $grey-darker;
-	color: rgba(255, 255, 255, 1);
+	background-color: $grey-lightest;
 }
 
 .head_bg--irishman{
 	/*background-color: #171717;*/
-	background-color: #ed1d24;
+	/*background-color: $irishman-primary-color;*/
+	background-color: white;
 }
 
 .yellow_irishman{
-	color: $world-tour-primary-color;
+	color: $irishman-primary-color;
 }
 
 .irishman_para.dropcap:first-child:first-letter { 
 	float: left; 
-	color: $world-tour-primary-color; 
+	color: $irishman-primary-color; 
 	font-size: 4em; 
 	line-height: 60px; 
 	padding-top: 15px; 
@@ -591,7 +591,7 @@ $irishman-primary-color: #FA4E83;
 
 .project_header--irishman{
 	/*color: #fffabd!important;*/
-	color: white!important;
+	color: black!important;
 }
 
 .hero--irishman img{
