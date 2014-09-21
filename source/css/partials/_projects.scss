@@ -555,7 +555,7 @@ $irishman-primary-color: #ed1d24;
 
 .body_bg--irishman{
 	background-color: $grey-lightest;
-	
+	/*background-color: black;*/
 	/*background-color: $irishman-primary-color;*/
 }
 
@@ -613,7 +613,7 @@ $irishman-primary-color: #ed1d24;
 /* Wide screens */
 @media screen and (min-width: 400px) and (max-height: 620px){
 	.hero--irishman img{
-	width: 60%!important;
+	width: 30%!important;
 }
 }
 
