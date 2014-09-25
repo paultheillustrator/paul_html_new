@@ -671,3 +671,112 @@ $irishman-primary-color: #ed1d24;
 	line-height: 1em;
 	margin-top: 0;
 }
+
+/*--------------------------------------------------------------*/
+/*------------------------------Blloon--------------------------*/
+/*--------------------------------------------------------------*/
+
+$blloon-primary-color-yellow: #e0f100;
+$blloon-primary-color: #ed1d24;
+
+.body_bg--blloon{
+	background-color: $grey-lightest;
+	/*background-color: black;*/
+	/*background-color: $blloon-primary-color;*/
+}
+
+.body_bg--blloon a {
+	color: $blloon-primary-color;
+}
+
+.head_bg--blloon{
+	/*background-color: #171717;*/
+	background-color: $blloon-primary-color;
+	color: white;
+}
+
+.yellow_blloon{
+	color: $blloon-primary-color;
+}
+
+.blloon_para.dropcap:first-child:first-letter { 
+	float: left; 
+	color: $blloon-primary-color; 
+	font-size: 4em; 
+	line-height: 60px; 
+	padding-top: 15px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: $header-font-family; 
+}
+
+/*------------------hero--blloon--------------*/
+.hero--blloon{
+	clear: both;
+	width: 100%;
+	/*background-color: #00c0ff;*/
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+
+.project_header--blloon{
+	/*color: #fffabd!important;*/
+	color: black!important;
+}
+
+.hero--blloon img{
+	width: 45%;
+	opacity: 1!important;
+}
+@media screen and (min-width: 600px){
+.hero--blloon img{
+
+}
+}
+
+/* Wide screens */
+@media screen and (min-width: 400px) and (max-height: 620px){
+	.hero--blloon img{
+	width: 30%!important;
+}
+}
+
+@media screen and (max-height: 800px) and(min-height: 0px) and (max-width: 1599px){
+	.hero--blloon img{
+	width: 40%; /*was 60%*/
+}
+}
+
+@media screen and (min-width: 1500px){
+	.hero--blloon img{
+	width: 35%;
+}
+}
+
+@media screen and (min-width: 2200px){
+	.hero--blloon img{
+	width: 30%;
+}
+}
+
+@media screen and (max-width: 480px){
+	.hero--blloon img{
+	width: 96%!important;
+	padding-bottom: 0.5em;
+	padding-top: 1.5em;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.hero--blloon img{
+	width: 70%!important;
+}	
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px){
+	.hero--blloon img{
+	width: 60%!important;
+}	
+}
