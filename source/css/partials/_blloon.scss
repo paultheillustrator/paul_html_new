@@ -1,0 +1,54 @@
+// Blloon colour swatches
+
+// Styleguide
+
+#colour-swatch{
+    display: inline-block;
+    width: 100%;
+    height:3em;
+}
+
+.bg--brand-primary-color-1{
+    background-color: #3c0091;
+}
+.bg--brand-primary-color-2{
+    background-color: #ed2d32;
+}
+.bg--brand-primary-color-3{
+    background-color: #ffeb00;
+}
+
+.bg--brand-secondary-color-1{
+    background-color: #dae76c;
+}
+.bg--brand-secondary-color-2{
+    background-color: #18a566;
+}
+.bg--brand-secondary-color-3{
+    background-color: #f59c1e;
+}
+.bg--brand-secondary-color-4{
+    background-color: #1489a9;
+}
+.bg--brand-secondary-color-5{
+    background-color: #4f3850;
+}
+
+.bg--brand-grey-darkest{
+    background-color: #121212;
+}
+.bg--brand-grey-dark{
+    background-color: lighten( #121212, 10%);
+}
+.bg--brand-grey-medium{
+    background-color: lighten( #121212, 30%);
+}
+.bg--brand-grey-medium-light{
+    background-color: lighten( #121212, 50%);
+}
+.bg--brand-grey-light{
+    background-color: lighten( #121212, 60%);
+}
+.bg--brand-grey-lightest{
+    background-color: lighten( #121212, 80%);
+}
