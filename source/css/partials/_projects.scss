@@ -691,7 +691,7 @@ $blloon-primary-color: #3b0091;
 
 .head_bg--blloon{
 	/*background-color: #171717;*/
-	background-color: $blloon-primary-color;
+	background-color: black;
 	color: white;
 }
 
@@ -723,52 +723,55 @@ $blloon-primary-color: #3b0091;
 }
 
 .hero--blloon h1{
-	color: #ed2d32!important;
+	color: white;
+}
+
+.hero--blloon .subline{
+	color: darken( #ffffff, 50%)!important;
 }
 
 .project_header--blloon{
 	/*color: #fffabd!important;*/
-	color: white!important;
 }
 
 .hero--blloon img{
-	width: 25%;
+	width: 60%;
 	opacity: 1!important;
+	margin-bottom: 1em;
 }
 @media screen and (min-width: 600px){
 .hero--blloon img{
-
+	width: 50%;
+	margin-bottom: 0.5em;
 }
 }
 
 /* Wide screens */
 @media screen and (min-width: 400px) and (max-height: 620px){
 	.hero--blloon img{
-	width: 30%!important;
+	
 }
 }
 
 @media screen and (max-height: 800px) and(min-height: 0px) and (max-width: 1599px){
 	.hero--blloon img{
-	width: 20%; /*was 60%*/
 }
 }
 
 @media screen and (min-width: 1500px){
 	.hero--blloon img{
-	width: 35%;
+		width: 40%;
 }
 }
 
 @media screen and (min-width: 2200px){
 	.hero--blloon img{
-	width: 30%;
 }
 }
 
 @media screen and (max-width: 480px){
 	.hero--blloon img{
-	width: 40%!important;
+	width: 90%!important;
 	padding-bottom: 0.5em;
 	padding-top: 1.5em;
 }
@@ -776,12 +779,12 @@ $blloon-primary-color: #3b0091;
 
 @media screen and (min-width: 481px) and (max-width: 768px){
 	.hero--blloon img{
-	width: 30%!important;
+	width: 60%!important;
 }	
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px){
 	.hero--blloon img{
-	width: 30%!important;
+	width: 50%!important;
 }	
 }
