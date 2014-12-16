@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title><%= current_page.data.title || "Paul Woods | Designer, illustrator, blogger and wanker" %></title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="<%= current_page.data.description%>">
+        <meta name="keywords" content="Paul Woods, paul, paul the designer, paul the illustrator, designer, illustrator, design, illustration, keynote, edenspiekermann, paul the designer, designer, Berlin">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- CSS -->
+        <%= stylesheet_link_tag  "screen", "modernizr" %>
+
+        <!-- JS -->
+        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main" %>
+        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js" %>
+
+        <script type="text/javascript" src="//use.typekit.net/evz6ssi.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You asshole. <a href="http://browsehappy.com/">You're using Internet Explore 7.  Upgrade your browser you idiot:</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>. Now.</p>
+        <![endif]-->
+        <%= partial "about" %>
+        <%= yield %>
+
+        <%= javascript_include_tag "js/plugins.js" %>
+        <%= javascript_include_tag "js/main.js" %>
+
+        <!-- Fit Text JS -->
+        <script type="text/javascript">
+            $("#giant").fitText(1.1, { minFontSize: '50px', maxFontSize: '120px' });
+            $("#fitText_01").fitText(1.1);
+            $("#fitText_02").fitText(0.31);
+            $("#fitText_03").fitText(1.4);
+            $("#fitText_04").fitText(1.1);
+        </script><!-- End Fit Text -->
+
+        <!-- Fade out as scroll -->
+        <script>
+                $(window).scroll(function() {
+            if ($(this).scrollTop() > 400) {
+                $( "" ).fadeIn();
+            } else {
+                console.log('there');
+                $( "#read-more" ).fadeOut();
+                $( "#read-more--invert" ).fadeOut();
+            }
+        });
+        </script>
+
+        <!-- Project thumbnails -->
+          <script>
+            $('a.project--thumb').on("touchstart", function (e) {
+                "use strict"; //satisfy the code inspectors
+                var link = $(this); //preselect the link
+                if (link.hasClass('hover')) {
+                    return true;
+                } else {
+                    link.addClass("hover");
+                    $('.project--thumb').not(this).removeClass("hover");
+                    e.preventDefault();
+                    return false; //extra, and to make sure the function has consistent return points
+                }
+            });
+          </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-44992307-1', 'paulthedesigner.ie');
+              ga('send', 'pageview');
+        </script>
+    </body>
+</html>
