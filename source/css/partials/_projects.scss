@@ -259,6 +259,8 @@ $design_thinking-primary-color: #ff2a00;
 }
 }
 
+
+
 @media screen and (max-height: 800px) and(min-height: 0px) and (max-width: 1599px){
 	.hero--design-thinking img{
 	width: 55%; /*was 60%*/
@@ -285,15 +287,21 @@ $design_thinking-primary-color: #ff2a00;
 }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 700px){
 	.hero--design-thinking img{
 	width: 80%!important;
 }	
 }
 
+@media screen and (min-width: 701px) and (max-width: 768px){
+	.hero--design-thinking img{
+	width: 60%!important;
+}	
+}
+
 @media screen and (min-width: 769px) and (max-width: 1000px){
 	.hero--design-thinking img{
-	width: 80%!important;
+	width: 50%!important;
 }	
 }
 
@@ -787,4 +795,78 @@ $blloon-primary-color: #3b0091;
 	.hero--blloon img{
 	width: 50%!important;
 }	
+}
+
+/*--------------------------------------------------------------*/
+/*------------------Type Factory------------------------*/
+/*--------------------------------------------------------------*/
+
+$type-factory-primary-color-yellow: #00f2ff;
+$type-factory-primary-color: #00f2ff;
+
+.body_bg--type-factory{
+	background-color: $type-factory-primary-color;
+	color: black;
+}
+
+.head_bg--type-factory{
+	/*background-color: #171717;*/
+	background-color: #181b1f;
+}
+
+.yellow_type-factory{
+	color: $type-factory-primary-color;
+}
+
+.type-factory_para.dropcap:first-child:first-letter { 
+	float: left; 
+	color: black; 
+	font-size: 4em; 
+	line-height: 60px; 
+	padding-top: 15px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: $header-font-family; 
+}
+
+/*------------------hero--type factory--------------*/
+.hero--type-factory{
+	clear: both;
+	width: 100%;
+	/*background-color: #00c0ff;*/
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	background-image:url("../images/projects/type-factory/type-factory-cover-photo.jpg");
+	background-position: bottom center!important;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    background-color: black;
+}
+
+.type-factory-mosaic{
+	width:100%;
+}
+
+.type-factory-mosaic img{
+	width:100%;
+	margin-left: auto;
+}
+
+@media screen and (max-width: 700px){
+	.hero--type-factory{
+	    padding-top: 13em;
+	}
+	.type-factory-mosaic{
+	width:100%;
+	overflow: hidden;
+}
+	.type-factory-mosaic img{
+	width:160%;
+	margin-left: -3em;
+}
+
 }

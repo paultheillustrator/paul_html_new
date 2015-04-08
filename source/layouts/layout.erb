@@ -6,21 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <!-- Use title if it's in the page YAML frontmatter -->
         <title><%= current_page.data.title || "Paul Woods | Designer, illustrator, blogger and wanker" %></title>
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="<%= current_page.data.description%>">
-        <meta name="keywords" content="Paul Woods, paul, paul the designer, paul the illustrator, designer, illustrator, design, illustration, keynote, edenspiekermann, paul the designer, designer, Berlin">
+          <meta name="keywords" content="Paul Woods, paul, paul the designer, paul the illustrator, designer, illustrator, design, illustration, keynote, huge, huge inc, edenspiekermann, paul the designer, designer, Berlin, New York">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- CSS -->
-        <%= stylesheet_link_tag  "screen", "modernizr" %>
+        <%= stylesheet_link_tag  "screen" %>
 
         <!-- JS -->
-        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main" %>
-        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js" %>
-
         <script type="text/javascript" src="//use.typekit.net/evz6ssi.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -34,8 +29,10 @@
         <%= yield %>
         <%= partial "footer" %>
 
+        <!-- JS -->
         <%= javascript_include_tag "js/plugins.js" %>
         <%= javascript_include_tag "js/main.js" %>
+        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js" %>
 
         <!-- Fit Text JS -->
         <script type="text/javascript">

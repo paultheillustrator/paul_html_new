@@ -10,21 +10,15 @@
         <title><%= current_page.data.title || "Paul Woods | Designer, illustrator, blogger and wanker" %></title>
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="<%= current_page.data.description%>">
-        <meta name="keywords" content="Paul Woods, paul, paul the designer, paul the illustrator, designer, illustrator, design, illustration, keynote, edenspiekermann, paul the designer, designer, Berlin">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+         <meta name="keywords" content="Paul Woods, paul, paul the designer, paul the illustrator, designer, illustrator, design, illustration, keynote, huge, huge inc, edenspiekermann, paul the designer, designer, Berlin, New York">
 
         <!-- CSS -->
-        <%= stylesheet_link_tag  "screen", "modernizr" %>
+        <%= stylesheet_link_tag  "screen" %>
 
         <!-- JS -->
-        <%= javascript_include_tag "modernizr-2.6.1.min.js", "plugins", "main" %>
-        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js" %>
-
         <script type="text/javascript" src="//use.typekit.net/evz6ssi.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -35,6 +29,23 @@
 
         <%= javascript_include_tag "js/plugins.js" %>
         <%= javascript_include_tag "js/main.js" %>
+        <%= javascript_include_tag "../js/modernizr-2.6.1.min.js" %>
+
+        <!-- Fade in images when loaded JS -->
+      <script>
+        $(".fadeIn").each(function() {
+            var src = $(this).data("src");
+            if (src) {
+                var img = new Image();
+                img.style.display = "none";
+                img.onload = function() {
+                    $(this).fadeIn(800);
+                };
+                $(this).append(img);            
+                img.src = src;
+            }
+        });
+        </script>
 
         <!-- Fit Text JS -->
         <script type="text/javascript">

@@ -94,7 +94,7 @@ h4{
 	font-family: $header-font-family;
 	font-weight: $black;
 	letter-spacing: 0.03em;
-	color: $grey-darkest;
+	color: white;
 	text-transform: uppercase;
 	/*position: fixed;
 	 top: 50%;
@@ -161,7 +161,7 @@ html, body{
 }
 
 .opening-paragraph{
-	font-size: 175%;
+	font-size: 150%;
 	letter-spacing: -1px;
 	line-height: 120%;
 	max-width: 1200px;
@@ -175,6 +175,18 @@ html, body{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding-bottom: 3em;
+}
+
+@media screen and (max-width: 1000px){
+	.opening-paragraph{
+	font-size: 120%;
+}
+}
+
+@media screen and (max-width: 768px){
+	.opening-paragraph{
+	font-size: 140%;
+}
 }
 
 
@@ -207,7 +219,13 @@ html, body{
 	top: -24px!important;
 }
 
+.hero span{
+	max-width: 2em!important;
+}
+
 @media screen and (max-width:550px){
+
+
 
 .subline--homepage--none{
 	display: none;
